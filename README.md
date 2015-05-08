@@ -13,9 +13,10 @@ We are going to be working with three different Collections -- Sighting, Bird, a
     - if the sighting has been confirmed or not
 
 We will need to:
-  * Add a Bird and User model
+  * Add a User model
+  * Add a Bird object to be exported to our Sighting Model
   * Refactor our Sighting model
-  * Create endpoints for Bird and User CRUD operations
+  * Create endpoints for User CRUD operations
   * Adjust our endpoints that work with the Sighting model to the new data structure and populate requirements
 
 ## Step 1: Understanding our Data Structure
@@ -24,7 +25,7 @@ In storing data in three different collections we will need to have relationship
 Review the three `.json` files included in this repo to get familiar with the data structure we will be creating. Identify the type of relationships we will be creating.
 
 ## Step 2: Create the _Bird_ object to be embedded into the Sighting model
-In a new file, `Bird.js`, create a Bird object using some the schema properties from the existing Sighting model. Name, order, and status will be the properties moved to our Bird object. See the `bird.json` and `sighting.json` files for guidance on the properties to be included in our schemas.
+In a new file, `Bird.js`, create a Bird object using some the schema properties from the existing Sighting model. Name, order, and status will be the properties moved to our Bird object. See the bird property in the `sighting.json` file for guidance on the properties to be included in the Bird object.
 
 ## Step 3: Create the _User_ Model
 In a new file, `User.js`, create a User model with the schema properties email, username, level, location, and member. Refer to the `user.json` file for needed types and validations.
@@ -43,8 +44,8 @@ Add another property called `bird:` that will store embedded data related to a s
 
 ## Step 5: Endpoints and Controllers - Create and Refactor
 
-  * Create CRUD endpoints and a Controller with CRUD methods for our new models -- User and Bird.
-  * Refactor the enpoints and logic related to Sightings from yesterday's code. Make any needed adjustments to existing code.
+  * Create CRUD endpoints and a Controller with CRUD methods for User
+  * Refactor the endpoints and logic related to Sightings from yesterday's code. Make any needed adjustments to existing code.
   * When Sighting data is requested make sure to populate it with User data before returning it to the client.
   * Make it possible for the client to request sightings for a specific user by through sending the user id as a part of the request query.
 
