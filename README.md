@@ -23,10 +23,8 @@ In storing data in three different collections we will need to have relationship
 
 Review the three `.json` files included in this repo to get familiar with the data structure we will be creating. Identify the type of relationships we will be creating.
 
-## Step 2: Create the _Bird_ Model
-In a new file, `Bird.js`, create a Bird model using some the schema properties from the existing Sighting model. Name, order, and status will be the properties moved to our new Bird schema. See the `bird.json` and `sighting.json` files for guidance on the properties to be included in our schemas.
-
-**Consider** adding a hook for an `updatedAt:` field
+## Step 2: Create the _Bird_ object to be embedded into the Sighting model
+In a new file, `Bird.js`, create a Bird object using some the schema properties from the existing Sighting model. Name, order, and status will be the properties moved to our Bird object. See the `bird.json` and `sighting.json` files for guidance on the properties to be included in our schemas.
 
 ## Step 3: Create the _User_ Model
 In a new file, `User.js`, create a User model with the schema properties email, username, level, location, and member. Refer to the `user.json` file for needed types and validations.
