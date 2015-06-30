@@ -22,7 +22,7 @@ We will need to:
 ## Step 1: Understanding our Data Structure
 In storing data in three different collections we will need to have relationships to best utilize our data.
 
-Review the three `.json` files included in this repo to get familiar with the data structure we will be creating. Identify the type of relationships we will be creating.
+Review the two `.json` files included in this repo to get familiar with the data structure we will be creating. Identify the type of relationships we will be creating.
 
 ## Step 2: Create the _Bird_ object to be embedded into the Sighting model
 In a new file, `Bird.js`, create a Bird object using some the schema properties from the existing Sighting model. Name, order, and status will be the properties moved to our Bird object. See the bird property in the `sighting.json` file for guidance on the properties to be included in the Bird object.
